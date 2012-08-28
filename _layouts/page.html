@@ -4,7 +4,7 @@
 	<title>{{ title }}</title>
 		<link rel="stylesheet" type="text/css" href="css/page.css" />
 	
-	{% if style % }
+	{% if style %}
 		<link rel="stylesheet" type="text/css" href="css/{{style}}.css" />
 	{% endif %}
 
@@ -12,11 +12,11 @@
 
 	<body>
 		<div id="header">
-			{% include 'header' %}
+			{% include header %}
 		</div>
 
 		<div id="sidebar">
-			{% include 'sidebar' %}
+			{% include sidebar %}
 		</div>
 
 		<div id="content">

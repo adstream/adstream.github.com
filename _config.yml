@@ -1,5 +1,4 @@
 safe: true
-auto: true
 baseurl: http://opensource.adstream.com/
 exclude: .gitignore README.md
 
