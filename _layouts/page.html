@@ -12,16 +12,18 @@
 
 	<body>
 		<div id="header">
-			{% include header %}
+			{% include header.html %}
 		</div>
 
-		<div id="sidebar">
-			{% include sidebar %}
+		<div id="body">
+			<div id="sidebar">
+				{% include sidebar.html %}
+			</div>
+			<div id="content">
+				{{ content }}
+			</div>
 		</div>
 
-		<div id="content">
-			{{ content }}
-		</div>
 	</body>
 </html>
 
