@@ -1,0 +1,24 @@
+---
+layout: page
+title: adstream.data: A Model Virtualization Layer
+---
+h1. adstream.data: A Model Virtualization Layer
+
+@adstream.data@ is a library that provides a framework for sharing data models between a Web service backend and the Javascript frontend of a Web application. To the frontend code, it exposes a hierarchical structure of Javascript objects existing in a sort of _virtual memory_ that supports bi-directional synchronization with the backend data. The backend service is expected to comply with a REST-based protocol specific to @adstream.data@ but can otherwise be entirely independent of the frontend application(s) making use of it.
+
+The design of @adstream.data@ *is not* optimally suitable for interfacing with a general-purpose database backend or with an arbitrary 3rd party internet service:
+
+# First, the library is oblivious to representation details of the transferred objects or the queries used to retrieve them: these have to be agreed upon and followed by both the implementation of the service and the application frontend code using @adstream.data@;
+# Second, the library will not work with an arbitrary JSON REST service: the backend has to support a specific envelope in order to interoperate with @adstream.data@.
+
+h2. Features
+
+* Model data is accessible directly as Javascript objects in memory;
+* Data hierarchy is tied to the REST URL schema exposed by the service;
+* Large collections can be ordered, filtered and paged, reducing amount of data cached on the client and the bandwidth requirements;
+* All CrUD operations are supported;
+* Event handlers can be associated with specific requests or with specific objects;
+* Client-side objects can be synchronized automatically on timer;
+* The data exchange is bi-directionally asynchronous and can use push transports (e.g. [[Comet|http://en.wikipedia.org/wiki/Comet_(programming)]]);
+* Frameworks simplifying creation of compatible backend services are available for Python (generic) and Javascript (Node.js).
+

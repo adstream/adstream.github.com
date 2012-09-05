@@ -1,0 +1,17 @@
+---
+layout: page
+title: Comprehensive HTML Templates
+---
+CHT (stands for Comprehensive HTML Templates) is a library that provides a special-purpose template engine for efficient rendering of Javascript data structures into HTML DOM. The engine is not a monolithic entity but a collection of components incorporating a variety of technologies: parsers for the template language and the data query language, Javascript code generator based on the dataflow model, a collection of the primitives for data processing, runtime support for rendering HTML incrementally when consuming asynchronous data sources, asynchronous loader for template modules and their localized string resources. All of these components are designed to work together as a high level framework facilitating the development of application's views, but some of them may be used independently for lower-level tasks or for tasks unrelated to HTML rendering.
+
+h2. Features
+
+* Template language compiled into Javascript code;
+* Text-to-@innerHTML@ DOM creation for maximum performance;
+* Built-in localization mechanism transparent to template developer;
+* Integrated with the [[HTML parser|http://docs.dojocampus.org/dojo/parser]] and the [[dijit framework|http://docs.dojocampus.org/dijit]] of the [[Dojo toolkit|http://dojotoolkit.org]];
+* Set of primitives for JSON data processing with XSLT-like capabilities;
+* Template modules with automatic loading of dependencies, including localization resources;
+* Incremental rendering supports asynchronous data sources and animated transitions.
+
+
