@@ -13,5 +13,3 @@ h2. Features
 * Set of primitives for JSON data processing with XSLT-like capabilities;
 * Template modules with automatic loading of dependencies, including localization resources;
 * Incremental rendering supports asynchronous data sources and animated transitions.
-
-
