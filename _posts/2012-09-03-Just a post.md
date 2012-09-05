@@ -1,3 +1,8 @@
+---
+layout: page
+title: Just a post
+---
+
 Just a post
 ===========
 
