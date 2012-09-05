@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page.html
 title: galette: Session middleware for Node.js
 ---
 galette
