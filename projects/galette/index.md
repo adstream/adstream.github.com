@@ -1,6 +1,6 @@
 ---
-layout: page.html
-title: galette: Session middleware for Node.js
+layout: page
+title: "galette: Session middleware for Node.js"
 ---
 galette
 =======

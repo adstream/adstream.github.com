@@ -1,6 +1,6 @@
 ---
 layout: page
-title: adstream.data: A Model Virtualization Layer
+title: "adstream.data: A Model Virtualization Layer"
 ---
 h1. adstream.data: A Model Virtualization Layer
 
