@@ -6,7 +6,9 @@
 
 <h1>BLOG POSTS</h1>
 
-{{site.posts}}
+{% for p in site.posts %}
+	<a href="{{p.url}}">{{p.title}}</a>
+{% endfor %}
 
 <h1>BLOGROLL</h1>
 
